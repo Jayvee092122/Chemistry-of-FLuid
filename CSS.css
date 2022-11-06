@@ -1,0 +1,104 @@
+<title>mystyle</title>
+<style>
+     body {
+         margin: 0;  
+
+
+       }
+
+       .container {
+           width: 100vw;
+           height: 100vh;
+
+           font-family: 'quicksand', sans-serif;
+           font-weight: normal;
+           font-size: 20px;
+
+           display: grid;
+
+           grid-template-columns: 1fr 1fr 1fr;
+           grid-template-rows: 50px 1fr 1fr 100px;
+           
+           gap: 10px;
+
+           padding: 10px;
+           box-sizing:border-box;
+           
+        }
+
+       .container div {
+           padding: 10px;
+           border: 1px solid #000000;
+
+       }
+       .Header {
+           grid-column-start: 1;
+           grid-column-end: 5;
+           background-color: #5BE6DC;
+
+       }
+
+    .content-large {
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+        grid-row-start: 2;
+        grid-row-end: span 50;
+
+        background-color: #CDD1D7;
+
+    }
+
+
+    .content-small {
+        background-color: #335EAA;
+
+
+
+    }
+
+    .footer {
+        grid-column: 1 / span 3;
+
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        grid-column: span 3;
+  
+        background-color: #5BE6DC;
+    }
+
+body {
+   background-color: #EDD6E6;
+}
+
+
+
+      .arrow {
+      border: solid black;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 3px;
+      }
+
+     .right {
+     transform: rotate(-45deg);
+     -webkit-transform: rotate(-45deg);
+     }
+
+    .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+     }
+
+   .up {
+   transform: rotate(-135deg);
+   -webkit-transform: rotate(-135deg);
+    }
+
+   .down {
+    transform: rotate(45deg);
+   -webkit-transform: rotate(45deg);
+
+    }
+
+</style>
